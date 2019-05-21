@@ -89,6 +89,7 @@ namespace CodiceFiscaleUtility
             this.CodiceComune = this.CodiceNormalizzato.Substring(11, 4);
             this.comuneProvinciaDaCodice();
         }
+        /*
         public CodiceFiscale(string Cognome, string Nome, string Sesso, DateTime Nascita, string CodiceComune, int LivelloOmocodia = 0)
         {
             if (String.IsNullOrWhiteSpace(Nome))
@@ -110,7 +111,7 @@ namespace CodiceFiscaleUtility
                 throw new ArgumentException("Livello omocodia non valido");
             this.LivelloOmocodia = LivelloOmocodia;
             this.calcolaCodice();
-        }
+        } */
         public CodiceFiscale(string Cognome, string Nome, string Sesso, DateTime Nascita, string Comune, string Provincia, int LivelloOmocodia = 0)
         {
             if (String.IsNullOrWhiteSpace(Nome))
